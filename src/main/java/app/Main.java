@@ -8,10 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-/**
- * Software Engineering Course Project
- * @author nihadguluzade
- */
+
 public class Main extends Application {
 
     public static void main(String[] args) {

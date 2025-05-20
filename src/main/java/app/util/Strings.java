@@ -1,6 +1,7 @@
 package app.util;
 
 import java.util.Locale;
+import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 /**
@@ -15,14 +16,24 @@ public abstract class Strings {
 
     static {
         final Locale locale = Locale.getDefault();
+        ResourceBundle tempBundle = null;
 
-        BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
+        try {
+            tempBundle = ResourceBundle.getBundle(BUNDLE_NAME, locale);
+        } catch (MissingResourceException e) {
+            System.out.println("Warning: Missing resource bundle: " + BUNDLE_NAME);
+        }
 
-        MAIN_APP_TITLE = BUNDLE.getString("Main.AppTitle");
+        BUNDLE = tempBundle;
+
+        if (BUNDLE != null) {
+            MAIN_APP_TITLE = BUNDLE.getString("Main.AppTitle");
+        } else {
+            MAIN_APP_TITLE = "SimpleHR";
+        }
     }
 
     public static ResourceBundle GetBundle() {
         return BUNDLE;
     }
-
 }

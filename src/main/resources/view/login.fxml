@@ -213,7 +213,7 @@
             <Insets right="14.0" top="15.0" />
          </GridPane.margin>
       </Button>
-      <Label fx:id="loginHeader" alignment="CENTER" contentDisplay="CENTER" maxWidth="275.0" prefHeight="60.0" text="YSOFT Software House Human Resources System" textFill="#9e9e9e" wrapText="true" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="BASELINE">
+      <Label fx:id="loginHeader" alignment="CENTER" contentDisplay="CENTER" maxWidth="275.0" prefHeight="60.0" text="SimpleHR Software for Human Resources System" textFill="#9e9e9e" wrapText="true" GridPane.halignment="LEFT" GridPane.rowIndex="8" GridPane.valignment="BASELINE">
          <font>
             <Font size="12.0" />
          </font>

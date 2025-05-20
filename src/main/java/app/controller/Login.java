@@ -44,7 +44,7 @@ public class Login {
             Stage stage = (Stage) scene.getWindow();
             stage.sizeToScene();
             stage.setResizable(false);
-            stage.setTitle("YSOFT Login");
+            stage.setTitle("SimpleHR Login");
         });
 
         employeeBtn.setOnAction(actionEvent -> {

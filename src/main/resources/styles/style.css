@@ -1,3 +1,4 @@
+/* ===== BASE STYLES ===== */
 .label, .text-field, .button {
     -fx-font-family: "Segoe UI", "Segoe UI Emoji";
 }
@@ -6,9 +7,10 @@
     /*-fx-background-color: #ffffff;*/
 }
 
+/* ===== PRIMARY BUTTONS ===== */
 .mac-btn {
-    -fx-background-color: linear-gradient(#42a1ec, #0070c9);
-    -fx-border-color: #07c;
+    -fx-background-color: linear-gradient(#4fd1c5, #38b2ac);
+    -fx-border-color: #319795;
     -fx-border-width: 1px;
     -fx-border-style: solid;
     -fx-text-fill: #FFFFFF;
@@ -17,18 +19,18 @@
 }
 
 .mac-btn:hover {
-    -fx-background-color: linear-gradient(#51a9ee, #147bcd);
-    -fx-border-color: #1482d0;
+    -fx-background-color: linear-gradient(#81e6d9, #4fd1c5);
+    -fx-border-color: #38b2ac;
 }
 
 .mac-btn:focused {
-    -fx-border-color: rgba(131, 192, 253, 0.9);
+    -fx-border-color: rgba(129, 230, 217, 0.9);
     -fx-border-width: 3px;
 }
 
 .btn {
-    -fx-background-color: linear-gradient(#42a1ec, #0070c9);
-    -fx-border-color: #07c;
+    -fx-background-color: linear-gradient(#4fd1c5, #38b2ac);
+    -fx-border-color: #319795;
     -fx-border-width: 1px;
     -fx-border-style: solid;
     -fx-text-fill: #FFFFFF;
@@ -37,27 +39,26 @@
 }
 
 .btn:hover {
-    -fx-background-color: linear-gradient(#51a9ee, #147bcd);
-    -fx-border-color: #1482d0;
+    -fx-background-color: linear-gradient(#81e6d9, #4fd1c5);
+    -fx-border-color: #38b2ac;
 }
 
 .btn:focused {
-    -fx-border-color: rgba(131, 192, 253, 0.9);
+    -fx-border-color: rgba(129, 230, 217, 0.9);
     -fx-border-width: 3px;
 }
 
 .mac-checkbox {
-
+    /* Keep original style */
 }
 
+/* ===== ROLE SELECTION BUTTONS ===== */
 #adminBtn, #employeeBtn, #managerBtn, #analystBtn, #designerBtn, #coderBtn, #testerBtn {
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
-    -fx-background-color: transparent;
-
+    -fx-background-color: #f7fafc;
     -fx-border-width: 1px;
-    /*-fx-border-color: #e0e0e0;*/
-    -fx-border-color: transparent;
+    -fx-border-color: #e2e8f0;
     -fx-border-radius: 2px;
 }
 
@@ -72,9 +73,11 @@
 
 #adminBtn:hover, #employeeBtn:hover, #managerBtn:hover, #analystBtn:hover, #designerBtn:hover,
 #coderBtn:hover, #testerBtn:hover {
-    -fx-border-color: #4FC3F7;
+    -fx-border-color: #90cdf4;
+    -fx-background-color: #ebf8ff;
 }
 
+/* Original images preserved */
 #adminBtn {
     -fx-background-image: url("/images/icons8-user-male-3-80.png");
 }
@@ -103,52 +106,59 @@
     -fx-background-image: url("/images/icons8-pass-fail-80.png");
 }
 
+/* ===== INPUT FIELDS ===== */
 .text-field, .password-field {
     -fx-border-radius: 2px;
-    -fx-border-color: #e0e0e0;
-    -fx-background-color: -fx-text-box-border, -fx-control-inner-background;
+    -fx-border-color: #cbd5e0;
+    -fx-background-color: #ffffff;
     -fx-min-height: 30px;
 }
 
 .text-field:hover, .text-field:selected, .password-field:hover, .password-field:selected {
-    -fx-border-color: #4FC3F7;
+    -fx-border-color: #63b3ed;
 }
 
+/* ===== TEXT BUTTONS ===== */
 #forgotPassword {
     -fx-background-color: transparent;
     -fx-border-width: 1px;
-    -fx-border-color: #e0e0e0;
+    -fx-border-color: #cbd5e0;
     -fx-border-radius: 2px;
-
     -fx-pref-width: 80px;
+    -fx-text-fill: #4fd1c5;
 }
 
 #forgotPassword:hover, #forgotPassword:selected {
-    -fx-border-color: #4FC3F7;
+    -fx-border-color: #4fd1c5;
+    -fx-text-fill: #38b2ac;
 }
 
 #signUpBtn {
     -fx-background-color: transparent;
+    -fx-text-fill: #4fd1c5;
 }
 
 #signUpBtn:hover {
     -fx-underline: true;
+    -fx-text-fill: #38b2ac;
 }
 
+/* ===== LANGUAGE SELECTOR ===== */
 #langBtn {
     -fx-background-image: url("/images/gb-48.png");
     -fx-background-position: center;
     -fx-background-repeat: no-repeat;
     -fx-background-size: 32px 32px;
-    -fx-background-color: transparent;
+    -fx-background-color: #f7fafc;
 }
 
 #langBtn .arrow {
     -fx-opacity: 0;
 }
 
+/* ===== MISC ===== */
 .project-info-label {
-    -fx-fill: #6F7782;
+    -fx-fill: #718096;
 }
 
 #formTeamImages .button:hover {
